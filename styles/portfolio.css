@@ -1,6 +1,8 @@
 :root {
   --heading-font: "Merriweather", serif;
   --default-font: "Nunito Sans", sans-serif;
+  --primary-background-color: rgb(71, 68, 68);
+  --seconday-background-color: gray;
 }
 
 html,
@@ -56,12 +58,10 @@ p {
 
 .homepage-link-right {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
-
   height: 100%;
   width: 50%;
-
   background-color: gray;
 }
 
@@ -70,18 +70,9 @@ p {
   font-family: "Merriweather", serif;
   font-size: 35px;
   text-decoration: none;
-
   display: block;
   line-height: 100vh;
   text-align: center;
-}
-
-.homepage-links a {
-  text-decoration: none;
-  color: black;
-  font-family: "Merriweather", serif;
-  font-weight: 700;
-  font-size: 36px;
 }
 
 .circle {
@@ -101,4 +92,42 @@ p {
   margin: auto;
 
   z-index: 21;
+}
+
+@media (max-width: 415px) {
+  .homepage-link-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(71, 68, 68);
+  }
+
+  .homepage-link-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    background-color: gray;
+  }
+
+  .homepage-link-left a {
+    line-height: 50vh;
+  }
+
+  .homepage-link-right a {
+    line-height: 50vh;
+  }
+}
+
+@media (min-width: 539px) and (max-width: 541px) {
+  .homepage-link-left a {
+    font-size: 25px;
+  }
+
+  .homepage-link-right a {
+    font-size: 25px;
+  }
 }
