@@ -79,6 +79,13 @@ p {
   border-radius: 50%;
   height: 25vw;
   width: 25vw;
+  overflow: hidden;
+  shape-outside: circle();
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background: white;
 
   text-align: center;
@@ -92,6 +99,13 @@ p {
   margin: auto;
 
   z-index: 21;
+}
+
+.circle img {
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
 }
 
 @media (max-width: 415px) {
@@ -120,6 +134,11 @@ p {
   .homepage-link-right a {
     line-height: 50vh;
   }
+
+  .circle {
+    height: 50vw;
+    width: 50vw;
+  }
 }
 
 @media (min-width: 539px) and (max-width: 541px) {
@@ -129,5 +148,10 @@ p {
 
   .homepage-link-right a {
     font-size: 25px;
+  }
+
+  .circle {
+    height: 25vw;
+    width: 25vw;
   }
 }
