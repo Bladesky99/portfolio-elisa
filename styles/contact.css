@@ -1,0 +1,34 @@
+:root {
+  --heading-font: "Merriweather", serif;
+  --default-font: "Nunito Sans", sans-serif;
+  --primary-background-color: #474444;
+  --seconday-background-color: gray;
+}
+
+body {
+  background-color: var(--seconday-background-color);
+}
+
+h1 {
+  font-family: var(--heading-font);
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info a {
+  color: var(--bs-heading-color, inherit);
+  text-decoration: none;
+}
+
+.socials {
+  text-align: center;
+  margin: 20px;
+}
+
+.socials i {
+  padding: 5px;
+}
