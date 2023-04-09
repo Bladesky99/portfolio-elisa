@@ -134,10 +134,13 @@ nav {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
 
+.about-link a {
   color: antiquewhite;
   font-size: 20px;
   font-family: "Merriweather", serif;
+  text-decoration: none;
 }
 
 .circle:hover .about-link {
