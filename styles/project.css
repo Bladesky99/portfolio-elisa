@@ -7,7 +7,8 @@
 
 body {
   background-color: var(--seconday-background-color);
-  margin: 50px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -40,4 +41,17 @@ p {
   font-family: var(--default-font);
   font-size: 13px;
   padding: 5px;
+}
+
+.reflection-container {
+  background-color: var(--primary-background-color);
+  opacity: 70%;
+  border: 1px solid var(--primary-background-color);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.reflection {
+  color: white;
+  margin: 10px;
 }
