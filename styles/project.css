@@ -1,13 +1,13 @@
 :root {
   --heading-font: "Merriweather", serif;
   --default-font: "Nunito Sans", sans-serif;
-  --primary-background-color: #474444;
-  --seconday-background-color: gray;
+  --project-color: #e0afa0;
+  --text-color: #463f3a;
+  --highlight-color: #7f9172;
 }
 
 body {
-  background-color: var(--seconday-background-color);
-  width: 80%;
+  background-color: var(--project-color);
   margin: 0 auto;
 }
 
@@ -15,43 +15,50 @@ h1 {
   text-align: center;
   margin: 30px;
   font-family: var(--heading-font);
+  color: var(--text-color);
 }
 
 h2 {
   font-family: var(--heading-font);
-  font-size: 25px;
+  font-size: 30px;
+  color: var(--text-color);
 }
 
 p {
   font-family: var(--default-font);
-  font-size: 12px;
+  font-size: 15px;
+  color: var(--text-color);
 }
 
 .container {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  margin: auto;
+  margin-bottom: 40px;
+  padding: 35px;
+
   width: 80%;
 }
 
 .container a {
-  background-color: var(--primary-background-color);
+  background-color: var(--highlight-color);
   color: white;
-  border: 1px solid var(--primary-background-color);
+  border: 1px solid var(--highlight-color);
   border-radius: 4px;
   text-decoration: none;
   text-align: center;
   font-family: var(--default-font);
-  font-size: 13px;
+  font-size: 15px;
   padding: 5px;
 }
 
-.reflection-container {
-  background-color: var(--primary-background-color);
-  opacity: 70%;
-  border: 1px solid var(--primary-background-color);
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-
 .reflection {
-  color: white;
-  margin: 10px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: justify;
 }
