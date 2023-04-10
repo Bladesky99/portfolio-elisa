@@ -3,6 +3,9 @@
   --default-font: "Nunito Sans", sans-serif;
   --primary-background-color: #474444;
   --seconday-background-color: gray;
+  --projects-color: #e0afa0;
+  --contact-color: #f4f3ee;
+  --text-color: #463f3a;
 }
 
 html,
@@ -16,29 +19,15 @@ body {
   width: 100vw;
 }
 
-h1,
-h2,
-h3 {
-  font-family: var(--heading-font);
-  font-weight: 700;
-}
+a {
+  color: #463f3a;
+  font-family: "Merriweather", serif;
+  font-size: 35px;
+  text-decoration: none;
 
-p {
-  font-family: var(--default-font);
-  font-weight: 400;
-}
-
-nav {
-  background-color: var(--primary-background-color);
-  color: white;
-}
-
-.navbar-brand {
-  color: antiquewhite;
-}
-
-.navbar .navbar-default {
-  color: antiquewhite;
+  display: block;
+  line-height: 100vh;
+  text-align: center;
 }
 
 .content {
@@ -55,20 +44,9 @@ nav {
   height: 100%;
   width: 50%;
 
-  background-color: rgb(71, 68, 68);
+  background-color: var(--projects-color);
 
   transition: 0.3s ease-in-out;
-}
-
-.homepage-link-left a {
-  color: white;
-  font-family: "Merriweather", serif;
-  font-size: 35px;
-  text-decoration: none;
-
-  display: block;
-  line-height: 100vh;
-  text-align: center;
 }
 
 .homepage-link-right {
@@ -77,19 +55,9 @@ nav {
   right: 0;
   height: 100%;
   width: 50%;
-  background-color: gray;
+  background-color: var(--contact-color);
 
   transition: 0.3s ease-in-out;
-}
-
-.homepage-link-right a {
-  color: black;
-  font-family: "Merriweather", serif;
-  font-size: 35px;
-  text-decoration: none;
-  display: block;
-  line-height: 100vh;
-  text-align: center;
 }
 
 .circle {
@@ -134,6 +102,9 @@ nav {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+
+  color: white;
+  font-family: var(--heading-font);
 }
 
 .about-link a {

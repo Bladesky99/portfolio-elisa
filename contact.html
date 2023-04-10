@@ -32,34 +32,76 @@
   <body>
     <h1>Let's get in touch!</h1>
 
-    <div class="contact-info">
-      <div>
-        E-mail:
-        <a href="mailto:elisagonzalez@live.nl" title="e-mail address"
-          >elisagonzalez@live.nl</a
-        >
-      </div>
+    <div class="content">
+      <p class="contact-message">
+        Thank you for your interest in my portfolio. Your visit is much
+        appreciated, and I am glad that you took the time to explore my work. If
+        you could kindly submit the form, I will make sure to check and respond
+        to your message as soon as possible. Thank you again for your
+        consideration, and I look forward to connecting with you. If you do not
+        wish to fill out the form, please feel free to use my e-mail address to
+        send me a message of your own.
+      </p>
 
-      <div>
-        Phone: <a href="tel:+31643105964" title="Phone number">+31643105964</a>
-      </div>
-    </div>
+      <form
+        action="https://docs.google.com/forms/d/e/https://docs.google.com/forms/d/e/1FAIpQLSepcXpHIXafwaBjcMxIMIK9SExrGVgK7EeAwDXMYw7Orww6ZA/viewform?usp=sf_link/formResponse"
+        method="POST"
+      >
+        <div class="row">
+          <div class="col">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="entry.123456789" required />
+          </div>
 
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/elisa-gonzalez-895235234/"
-        ><i
-          class="fa-brands fa-linkedin fa-2xl"
-          style="color: #212529"
-          title="LinkedIn"
-        ></i
-      ></a>
-      <a href="https://instagram.com/bladesky99?igshid=YmMyMTA2M2Y="
-        ><i
-          class="fa-brands fa-instagram fa-2xl"
-          style="color: #212529"
-          title="Instagram"
-        ></i
-      ></a>
+          <div class="col">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="entry.987654321" required />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="entry.456789012" />
+          </div>
+
+          <div class="col">
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="entry.345678901" />
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="inquiry">Inquiry:</label>
+          <textarea id="inquiry" name="entry.234567890" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="socials">
+        <span class="contact-info">
+          E-mail:
+          <a href="mailto:elisagonzalez@live.nl" title="e-mail address"
+            >elisagonzalez@live.nl</a
+          >
+        </span>
+
+        <a href="https://www.linkedin.com/in/elisa-gonzalez-895235234/"
+          ><i
+            class="fa-brands fa-linkedin fa-2xl"
+            style="color: #463f3a"
+            title="linkedin"
+          ></i
+        ></a>
+        <a href="https://instagram.com/bladesky99?igshid=YmMyMTA2M2Y="
+          ><i
+            class="fa-brands fa-instagram fa-2xl"
+            style="color: #463f3a"
+            title="instagram"
+          ></i
+        ></a>
+      </div>
     </div>
   </body>
 </html>
