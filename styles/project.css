@@ -32,6 +32,11 @@ p {
   color: var(--text-color);
 }
 
+footer p {
+  text-align: center;
+  margin: 20px;
+}
+
 .container {
   background: rgba(255, 255, 255, 0.22);
   border-radius: 16px;
