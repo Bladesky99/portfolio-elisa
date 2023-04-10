@@ -9,6 +9,8 @@
 body {
   background-color: var(--contact-color);
   color: var(--text-color);
+
+  padding-top: 60px;
 }
 
 h1 {
