@@ -36,8 +36,8 @@ p {
 img {
   display: block;
   margin: 0 auto;
-  height: 25vw;
-  width: 20vw;
+  max-width: 50%;
+  height: auto;
 
   border-radius: 4px;
 }
@@ -66,4 +66,26 @@ img {
   border-radius: 4px;
   color: white;
   padding: 7px;
+}
+
+@media (max-width: 415px) {
+  h1,
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  img {
+    max-width: 70%;
+    height: auto;
+  }
 }
