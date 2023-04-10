@@ -142,7 +142,7 @@ a {
     left: 0;
     height: 50%;
     width: 100%;
-    background-color: rgb(71, 68, 68);
+    background-color: var(--projects-color);
   }
 
   .homepage-link-right {
@@ -151,7 +151,7 @@ a {
     right: 0;
     height: 50%;
     width: 100%;
-    background-color: gray;
+    background-color: var(--contact-color);
   }
 
   .homepage-link-left a {
