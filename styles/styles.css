@@ -29,24 +29,61 @@ a {
   text-align: center;
 }
 
-.content {
+section {
   position: relative;
   height: 100vh;
   width: 100vw;
+  display: flex;
 }
 
-.homepage-link-left {
+section .screen {
+  position: relative;
+  flex-grow: 1;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: none;
+}
+
+section .screen:hover {
+  flex-grow: 2;
+}
+
+section .screen:nth-child(1) {
+  background-color: #e0afa0;
+}
+
+section .screen:nth-child(2) {
+  background-color: #f4f3ee;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 50;
+}
+
+.header .left {
+  color: #463f3a;
+  font-family: "Merriweather", serif;
+  font-size: 35px;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 50%;
   background-color: var(--projects-color);
-  transition: 0.3s ease-in-out;
-  z-index: 2;
 }
 
-.homepage-link-right {
+.header .right {
+  color: #463f3a;
+  font-family: "Merriweather", serif;
+  font-size: 35px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -54,17 +91,9 @@ a {
   width: 50%;
   background-color: var(--contact-color);
   transition: 0.3s ease-in-out;
-  z-index: 2;
 }
 
-.homepage-link-left:hover {
-  transform: translateX(10%);
-  transform-origin: right;
-}
-
-.homepage-link-right:hover {
-  transform: translateX(-10%);
-}
+/* Circle */
 
 .circle {
   border-radius: 50%;
@@ -114,7 +143,7 @@ a {
 }
 
 .circle:hover .about-link {
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .circle img {
@@ -130,35 +159,6 @@ a {
 .circle:hover img {
   -webkit-filter: grayscale(100%) blur(3px);
   filter: grayscale(100%) blur(3px);
-}
-
-@media (max-width: 415px) {
-  .homepage-link-left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50%;
-    width: 100%;
-    background-color: var(--projects-color);
-  }
-  .homepage-link-right {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 50%;
-    width: 100%;
-    background-color: var(--contact-color);
-  }
-  .homepage-link-left a {
-    line-height: 50vh;
-  }
-  .homepage-link-right a {
-    line-height: 50vh;
-  }
-  .circle {
-    height: 50vw;
-    width: 50vw;
-  }
 }
 
 @media (min-width: 539px) and (max-width: 541px) {

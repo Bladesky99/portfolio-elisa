@@ -9,7 +9,6 @@
 body {
   background-color: var(--project-color);
   margin: 0 auto;
-
   padding-top: 60px;
 }
 
@@ -44,11 +43,9 @@ footer p {
   backdrop-filter: blur(2.9px);
   -webkit-backdrop-filter: blur(2.9px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-
   margin: auto;
   margin-bottom: 40px;
   padding: 35px;
-
   width: 80%;
 }
 
@@ -70,22 +67,50 @@ footer p {
   text-align: justify;
 }
 
+.side-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.nav-left,
+.nav-right {
+  transform: rotate(180deg);
+  text-align: center;
+  font-size: 24px;
+}
+
+.nav-left {
+  writing-mode: vertical-rl;
+  margin-right: 50px;
+}
+
+.nav-right {
+  writing-mode: vertical-lr;
+  margin-left: 50px;
+}
+
 @media (max-width: 415px) {
   h1,
   h2 {
     font-size: 25px;
   }
-
   p {
     font-size: 10px;
   }
-
   .reflection {
     width: 80%;
   }
 }
 
 @media (min-width: 539px) and (max-width: 541px) {
+  .reflection {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1920px) {
   .reflection {
     width: 80%;
   }
